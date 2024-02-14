@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
 @font-face {
   font-family: "Primal Regular";
@@ -9,13 +8,11 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
 body {
   display: flex;
   min-height: 100vh;
@@ -29,22 +26,15 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-
 main {
   flex: 1;
 }
-
-/*===================================*
-01. GENERAL STYLE
-*===================================*/
 section {
   padding: 100px 0;
 }
-
 section:first-child {
   padding-top: 0;
 }
-
 a {
   color: white;
   transition: all 0.5s ease;
@@ -53,11 +43,9 @@ a:hover {
   color: #00e4ff;
   text-decoration: none;
 }
-
 .btn-default {
   background: #00e4ff;
 }
-
 .btn-gradient {
   background-image: linear-gradient(to right, #00e4ff 0%, #a6c1ee 51%, #fbc2eb 100%);
   transition: 0.5s;
@@ -69,13 +57,11 @@ a:hover {
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .btn-gradient:hover {
   background-position: right center;
   color: white;
   border-color: #fbc2eb;
 }
-
 .btn-outline {
   transition: 0.5s;
   background-image: linear-gradient(to right, #00e4ff 0%, #a6c1ee 51%, #fbc2eb 100%);
@@ -95,11 +81,9 @@ a:hover {
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .bg-gradient {
   background-image: linear-gradient(to right, #00e4ff 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
-
 .section-title {
   font-weight: bold;
   font-size: 1.625em;
@@ -120,10 +104,6 @@ a:hover {
   width: 80px;
   box-sizing: border-box;
 }
-
-/*===================================*
-02. HEADER
-*===================================*/
 header {
   padding: 25px 65px;
   transition: all 0.4s ease 0s;
@@ -131,7 +111,6 @@ header {
 header.active {
   background: #121833;
 }
-
 .navbar {
   padding: 0;
 }
@@ -146,7 +125,6 @@ header.active {
   max-width: 140px;
   transition: all 0.5s ease;
 }
-
 .navbar-expand-lg .navbar-nav .nav-item {
   padding: 0 12px;
   transition: all 0.5s ease;
@@ -168,7 +146,6 @@ header.active {
 .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #00e4ff;
 }
-
 header.nav-fixed {
   padding: 10px 15px;
   background-color: #262d4e;
@@ -176,19 +153,13 @@ header.nav-fixed {
 header.nav-fixed .navbar-brand img {
   max-width: 102px;
 }
-
-/*===================================*
-03. HOME
-*===================================*/
 #home {
   margin-top: 13em;
 }
-
 .badge-default {
   color: white;
   font-size: 1em;
 }
-
 .banner-effect {
   bottom: 0;
   height: 100%;
@@ -197,7 +168,6 @@ header.nav-fixed .navbar-brand img {
   right: 0;
   top: 0;
 }
-
 .list-currency {
   list-style: none;
   margin: 1em 0;
@@ -213,10 +183,6 @@ header.nav-fixed .navbar-brand img {
 .list-currency li:last-child {
   margin-right: 0;
 }
-
-/*===================================*
-04. SERVICES
-*===================================*/
 .box-wrap {
   background: #121833;
   margin-top: 30px;
@@ -238,10 +204,6 @@ header.nav-fixed .navbar-brand img {
   margin: 0;
   text-align: center;
 }
-
-/*===================================*
-0. FOOTER
-*===================================*/
 #site-footer .top-footer {
   background: url(http://bestwebcreator.com/cryptocash/demo/assets/images/footer_bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -273,7 +235,7 @@ header.nav-fixed .navbar-brand img {
   display: none;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: "\f105";
 }
 #site-footer .footer-list .li-icon {
   margin-right: 10px;
@@ -331,30 +293,20 @@ header.nav-fixed .navbar-brand img {
 #site-footer ul.footer-menu li:first-child {
   margin-left: 0;
 }
-
-/* -------------------------------------------------
-  max-width: 1440px
----------------------------------------------------*/
 @media only screen and (max-width: 1440px) {
   header {
     padding: 25px 15px;
   }
-
   .navbar-expand-lg .navbar-nav .nav-item {
     padding: 0 10px;
   }
-
   .navbar-expand-lg .nav_btn > li {
     padding: 0;
   }
-
   header .navbar-nav a {
     font-size: 16px;
   }
 }
-/* -------------------------------------------------
-  max-width: 1199px
----------------------------------------------------*/
 @media only screen and (max-width: 1199px) {
   .navbar .navbar-brand {
     font-size: 1.25em;
@@ -362,7 +314,6 @@ header.nav-fixed .navbar-brand img {
   .navbar .navbar-brand img {
     max-width: 109px;
   }
-
   .navbar-expand-lg .navbar-nav .nav-item {
     padding: 0 5px;
   }
@@ -373,78 +324,60 @@ header.nav-fixed .navbar-brand img {
     padding: 10px 20px;
     font-size: 14px;
   }
-
   .navbar-expand-lg .navbar-nav.nav_btn > li {
     margin-left: 0px;
   }
-
   .navbar-expand-lg .navbar-nav.nav_btn a.btn {
     padding: 10px 20px;
   }
-
   .navbar-expand-lg .navbar-nav.nav_btn a {
     font-size: 14px;
     padding: 0px;
   }
 }
-/* -------------------------------------------------
-  min-width: 991px
----------------------------------------------------*/
 @media only screen and (min-width: 991px) {
   .navbar-expand-lg .navbar-nav li:hover > .dropdown-menu {
     display: block;
   }
-
   .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-menu {
     display: none;
     left: 100%;
     top: 0;
   }
-
   .navbar-nav .dropdown-menu {
     display: none;
   }
-
   .navbar-expand-lg .navbar-nav .dropdown-menu li:hover > a {
     background-color: #3231a8;
   }
-
   .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-toggler {
     padding-right: 35px;
   }
-
   .dropdown-menu .dropdown-toggler::after {
     position: absolute;
     right: 10px;
     top: 10px;
   }
 }
-/* -------------------------------------------------
-  max-width: 991px
----------------------------------------------------*/
 @media only screen and (max-width: 991px) {
   #site-header {
     padding-left: 15px;
     padding-right: 15px;
     background: #262d4e;
   }
-
   header.fixed-top {
     position: absolute;
   }
-
   .navbar .navbar-brand {
     font-size: 1.6em;
   }
   .navbar .navbar-brand img {
     max-width: 140px;
   }
-
   .navbar-toggler {
     border: 0 none;
     font-size: 24px;
   }
-
   .navbar-nav {
     -webkit-animation-name: none;
     animation-name: none;
@@ -453,66 +386,50 @@ header.nav-fixed .navbar-brand img {
     text-align: center;
     width: 50%;
   }
-
   .navbar-nav:last-child {
     border: 0;
   }
-
   .navbar-expand-lg .navbar-nav .nav-item {
     -webkit-animation-name: none;
     animation-name: none;
     padding: 0;
   }
-
   .navbar-expand-lg .navbar-nav.nav_btn > li {
     padding-bottom: 10px;
   }
-
   .navbar-nav .dropdown-menu {
     border: 0 none;
     text-align: center;
   }
-
   .navbar-nav .dropdown-menu .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.3);
   }
-
   .navbar-expand-lg .navbar-nav .nav-item .nav-link.active::before {
     bottom: 0;
   }
-
   .navbar-expand-lg .navbar-nav .nav-link {
     display: inline-block;
     padding: 10px 0;
     text-align: center;
   }
-
   header {
     height: auto;
     padding: 10px 0;
   }
-
   header.nav-fixed {
     height: auto;
   }
 }
-/* -------------------------------------------------
-  max-width: 767px
----------------------------------------------------*/
 @media only screen and (max-width: 767px) {
   #site-footer .copyright,
-#site-footer ul.footer-menu {
+  #site-footer ul.footer-menu {
     text-align: center;
   }
 }
-/* -------------------------------------------------
-  max-width: 480px
----------------------------------------------------*/
 @media only screen and (max-width: 480px) {
   .navbar-brand img {
     max-width: 200px;
   }
-
   .navbar-nav {
     border-right: 0 none;
     width: 100%;
